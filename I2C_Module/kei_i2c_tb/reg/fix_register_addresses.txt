@@ -1,0 +1,16 @@
+// Fix for the I2C register model to match the RTL implementation
+// These address changes align the UVM register model with the actual RTL implementation
+
+// The following registers need to be remapped:
+// - IC_COMP_TYPE     : 0x70 -> 0x18
+// - IC_COMP_VERSION  : 0x74 -> 0x1C
+// - IC_COMP_PARAM_1  : 0x78 -> 0x20
+// - IC_HS_SPKLEN     : 0x7C -> 0x24
+// - IC_FS_SPKLEN     : 0x80 -> 0x28
+// - IC_ACK_GENERAL_CALL: 0x84 -> 0x2C
+// - IC_SDA_SETUP     : 0x88 -> 0x30
+// - IC_SDA_HOLD      : 0x8C -> 0x34
+// - IC_INTR_MASK     : 0x98 -> 0x40
+// - IC_HS_SCL_LCNT   : 0x3C -> 0x44
+
+// This will require updating the default_map.add_reg() calls in the ral_kei_i2c class's build() function

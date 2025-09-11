@@ -1,0 +1,956 @@
+# vsim -c -do "run -all; quit" kei_i2c_tb "+TESTNAME=kei_i2c_reg_hw_reset_test" 
+# Start time: 09:17:38 on Sep 11,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 2021.2_1 linux May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.kei_i2c_if(fast)
+# Loading work.kei_i2c_backdoor_if(fast)
+# Loading work.kei_vip_i2c_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.kei_vip_i2c_pkg(fast)
+# Loading work.kei_vip_apb_if(fast)
+# Loading work.kei_vip_apb_pkg(fast)
+# Loading work.kei_i2c_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.kei_i2c_tb(fast)
+# ** Warning: (vsim-3838) Variable '/kei_i2c_tb/apb_if/prdata' written by continuous and procedural assignments. 
+# One of the assignments is implicit. See ../tb/kei_i2c_tb.sv(30).
+#    Time: 0 ps  Iteration: 0  Instance: /kei_i2c_tb/apb_if File: ../agents/kei_vip_apb3/kei_vip_apb_if.sv Line: 29
+# ** Warning: (vsim-3838) Variable '/kei_i2c_tb/apb_if/pready' written by continuous and procedural assignments. 
+# One of the assignments is implicit. See ../tb/kei_i2c_tb.sv(31).
+#    Time: 0 ps  Iteration: 0  Instance: /kei_i2c_tb/apb_if File: ../agents/kei_vip_apb3/kei_vip_apb_if.sv Line: 30
+# ** Warning: (vsim-3838) Variable '/kei_i2c_tb/apb_if/pslverr' written by continuous and procedural assignments. 
+# One of the assignments is implicit. See ../tb/kei_i2c_tb.sv(32).
+#    Time: 0 ps  Iteration: 0  Instance: /kei_i2c_tb/apb_if File: ../agents/kei_vip_apb3/kei_vip_apb_if.sv Line: 31
+# Loading /home/prawns/Desktop/questasim/uvm-1.1d/linux/uvm_dpi.so
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# [TB] TESTNAME plusarg provided. Running: kei_i2c_reg_hw_reset_test
+# UVM_INFO @ 0: reporter [RNTST] Running test kei_i2c_reg_hw_reset_test...
+# [READ] Unknown address: 0xxxx, returning 0
+# UVM_INFO ../env/kei_i2c_env.sv(70) @ 0: uvm_test_top.env [build_phase] Unable to get ral_block_kei_i2c from uvm_config_db and create a RGM locally
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_master_agent.sv(82) @ 0: uvm_test_top.env.i2c_mst [build_phase] kei_vip_i2c_master_agent: starting...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_master_agent.sv(127) @ 0: uvm_test_top.env.i2c_mst [build_phase] creating passive agent
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_master_agent.sv(142) @ 0: uvm_test_top.env.i2c_mst [build_phase] agent configuration
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_master_agent.sv(147) @ 0: uvm_test_top.env.i2c_mst [build_phase] kei_vip_i2c_master_agent: finishing...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_master_monitor.sv(144) @ 0: uvm_test_top.env.i2c_mst.monitor [build_phase] kei_vip_i2c_master_monitor: Starting...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_master_monitor.sv(157) @ 0: uvm_test_top.env.i2c_mst.monitor [build_phase] kei_vip_i2c_master_monitor: finishing...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_slave_agent.sv(83) @ 0: uvm_test_top.env.i2c_slv [build_phase] kei_vip_i2c_slave_agent: starting...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_slave_agent.sv(132) @ 0: uvm_test_top.env.i2c_slv [build_phase] agent configuration
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_slave_agent.sv(135) @ 0: uvm_test_top.env.i2c_slv [build_phase] creating active agent
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_slave_agent.sv(150) @ 0: uvm_test_top.env.i2c_slv [build_phase] kei_vip_i2c_slave_agent: finishing...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_slave_driver.sv(191) @ 0: uvm_test_top.env.i2c_slv.driver [build_phase] kei_vip_i2c_slave_driver: starting...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_slave_driver.sv(214) @ 0: uvm_test_top.env.i2c_slv.driver [build_phase] kei_vip_i2c_slave_driver: finishing...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_slave_monitor.sv(143) @ 0: uvm_test_top.env.i2c_slv.monitor [build_phase] kei_vip_i2c_slave_monitor: Starting...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_slave_monitor.sv(156) @ 0: uvm_test_top.env.i2c_slv.monitor [build_phase] kei_vip_i2c_slave_monitor: finishing...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_slave_sequencer.sv(65) @ 0: uvm_test_top.env.i2c_slv.sequencer [build_phase] cfg get ok
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_master_agent.sv(152) @ 0: uvm_test_top.env.i2c_mst [connect_phase] kei_vip_i2c_master_agent: starting...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_master_agent.sv(156) @ 0: uvm_test_top.env.i2c_mst [connect_phase] kei_vip_i2c_master_agent: finishing...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_slave_agent.sv(155) @ 0: uvm_test_top.env.i2c_slv [connect_phase] kei_vip_i2c_slave_agent: starting...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_slave_agent.sv(159) @ 0: uvm_test_top.env.i2c_slv [connect_phase] kei_vip_i2c_slave_agent: finishing...
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(339) @ 0: reporter [Questa UVM] End Of Elaboration
+# UVM_INFO ../tests/kei_i2c_reg_hw_reset_test.sv(25) @ 0: uvm_test_top [SEQ] sequence starting
+# include_coverage not located
+#   did you mean i2c_vif?
+#   did you mean recording_detail?
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_slave_agent.sv(186) @ 0: uvm_test_top.env.i2c_slv [run_phase] kei_vip_i2c_slave_agent run phase: starting...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_slave_agent.sv(173) @ 0: uvm_test_top.env.i2c_slv [reconfigure_via_task] configuration at uvm_test_top.env.i2c_slv:
+# -------------------------------------------------------------------------------------
+# Name                             Type                             Size  Value        
+# -------------------------------------------------------------------------------------
+# kei_vip_i2c_agent_configuration  kei_vip_i2c_agent_configuration  -     @1351        
+#   inst                           string                           0     ""           
+#   bus_speed                      bus_speed_enum                   3     STANDARD_MODE
+#   bus_type                       bus_type_enum                    2     I2C_BUS      
+#   scl_high_time_ss               integral                         32    'd4000       
+#   scl_low_time_ss                integral                         32    'd4700       
+#   scl_high_time_offset_ss        integral                         32    'd1000       
+#   scl_low_time_offset_ss         integral                         32    'd300        
+#   min_su_sta_time_ss             integral                         32    'd4700       
+#   min_su_sto_time_ss             integral                         32    'd4000       
+#   min_su_dat_time_ss             integral                         32    'd250        
+#   min_hd_sta_time_ss             integral                         32    'd4000       
+#   min_hd_dat_time_ss             integral                         32    'd300        
+#   max_hd_dat_time_ss             integral                         32    'd3450       
+#   tbuf_time_ss                   integral                         32    'd4700       
+#   scl_high_time_fs               integral                         32    'd600        
+#   scl_low_time_fs                integral                         32    'd1300       
+#   scl_high_time_offset_fs        integral                         32    'd300        
+#   scl_low_time_offset_fs         integral                         32    'd300        
+#   min_su_sta_time_fs             integral                         32    'd600        
+#   min_su_sto_time_fs             integral                         32    'd600        
+#   min_su_dat_time_fs             integral                         32    'd100        
+#   min_hd_sta_time_fs             integral                         32    'd600        
+#   min_hd_dat_time_fs             integral                         32    'd300        
+#   max_hd_dat_time_fs             integral                         32    'd900        
+#   tbuf_time_fs                   integral                         32    'd1300       
+#   scl_high_time_hs               integral                         32    'd100        
+#   scl_low_time_hs                integral                         32    'd200        
+#   scl_high_time_offset_hs        integral                         32    'd40         
+#   scl_low_time_offset_hs         integral                         32    'd40         
+#   min_su_sta_time_hs             integral                         32    'd160        
+#   min_su_sto_time_hs             integral                         32    'd160        
+#   min_su_dat_time_hs             integral                         32    'd10         
+#   min_hd_sta_time_hs             integral                         32    'd160        
+#   min_hd_dat_time_hs             integral                         32    'd40         
+#   max_hd_dat_time_hs             integral                         32    'd70         
+#   tbuf_time_hs                   integral                         32    'd1300       
+#   scl_high_time_fm_plus          integral                         32    'd260        
+#   scl_low_time_fm_plus           integral                         32    'd500        
+#   scl_high_time_offset_fm_plus   integral                         32    'd120        
+#   scl_low_time_offset_fm_plus    integral                         32    'd120        
+#   min_su_sta_time_fm_plus        integral                         32    'd260        
+#   min_su_sto_time_fm_plus        integral                         32    'd260        
+#   min_su_dat_time_fm_plus        integral                         32    'd50         
+#   min_hd_sta_time_fm_plus        integral                         32    'd260        
+#   min_hd_dat_time_fm_plus        integral                         32    'd300        
+#   max_hd_dat_time_fm_plus        integral                         32    'd900        
+#   tbuf_time_fm_plus              integral                         32    'd500        
+#   agent_id                       integral                         32    'b0          
+#   master_code                    integral                         3     'b0          
+#   slave_address                  integral                         10    'b1100110011 
+#   enable_10bit_addr              integral                         1     'b0          
+#   enable_response_to_gen_call    integral                         1     'b1          
+#   slave_type                     integral                         32    'd1          
+#   enable_put_response            integral                         1     'b1          
+#   enable_cci_8bit                integral                         1     'b0          
+#   enable_eeprom_32bit            integral                         1     'b0          
+#   enable_driver_events           integral                         1     'b1          
+#   enable_pullup_resistor         integral                         1     'b1          
+#   start_hs_in_fm_plus            integral                         1     'b0          
+#   enable_bus_clear_sda           integral                         1     'b0          
+#   enable_bus_clear_scl_off       integral                         1     'b0          
+#   clock_count_bus_clear_sda_low  integral                         32    'd15         
+#   clock_count_for_sda_bus_clear  integral                         32    'd3          
+#   bus_clear_sda_timeout          integral                         32    'd20000      
+#   enable_glitch_insert_sda       integral                         1     'b0          
+#   glitch_size_sda                integral                         32    'd1          
+#   enable_glitch_insert_scl       integral                         1     'b0          
+#   glitch_size_scl                integral                         32    'd1          
+#   no_of_slave_address_ranges     integral                         32    'd0          
+#   slave_address_start            da(integral)                     0     -            
+#   slave_address_end              da(integral)                     0     -            
+#   timescale_factor               real                             64    1.000000     
+#   device_id                      integral                         24    'b0          
+#   t_reset_detect_time            integral                         64    'b0          
+#   enable_tlow_1mhz_check         integral                         1     'b0          
+#   enable_tlow_400khz_check       integral                         1     'b0          
+#   enable_tlow_100khz_check       integral                         1     'b0          
+#   inst                           string                           0     ""           
+#   checks_coverage_enable         integral                         1     'b0          
+#   is_active                      integral                         1     'b1          
+#   checks_enable                  integral                         1     'b1          
+#   enable_xml_gen                 integral                         1     'b0          
+#   enable_traffic_log             integral                         1     'b1          
+#   enable_slave_blocking          integral                         1     'b0          
+#   enable_slave_trans_log         integral                         1     'b0          
+# -------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_slave_agent.sv(196) @ 0: uvm_test_top.env.i2c_slv [run_phase] kei_vip_i2c_slave_agent run phase: finishing...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_slave_monitor.sv(238) @ 0: uvm_test_top.env.i2c_slv.monitor [run_phase] kei_vip_i2c_slave_monitor::Starting...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_slave_driver.sv(317) @ 0: uvm_test_top.env.i2c_slv.driver [run_phase] kei_vip_i2c_slave_driver::Starting...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_master_agent.sv(183) @ 0: uvm_test_top.env.i2c_mst [run_phase] kei_vip_i2c_master_agent run phase: starting...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_master_agent.sv(170) @ 0: uvm_test_top.env.i2c_mst [reconfigure_via_task] configuration at uvm_test_top.env.i2c_mst:
+# -------------------------------------------------------------------------------------
+# Name                             Type                             Size  Value        
+# -------------------------------------------------------------------------------------
+# kei_vip_i2c_agent_configuration  kei_vip_i2c_agent_configuration  -     @518         
+#   inst                           string                           0     ""           
+#   bus_speed                      bus_speed_enum                   3     STANDARD_MODE
+#   bus_type                       bus_type_enum                    2     I2C_BUS      
+#   scl_high_time_ss               integral                         32    'd4000       
+#   scl_low_time_ss                integral                         32    'd4700       
+#   scl_high_time_offset_ss        integral                         32    'd1000       
+#   scl_low_time_offset_ss         integral                         32    'd300        
+#   min_su_sta_time_ss             integral                         32    'd4700       
+#   min_su_sto_time_ss             integral                         32    'd4000       
+#   min_su_dat_time_ss             integral                         32    'd250        
+#   min_hd_sta_time_ss             integral                         32    'd4000       
+#   min_hd_dat_time_ss             integral                         32    'd300        
+#   max_hd_dat_time_ss             integral                         32    'd3450       
+#   tbuf_time_ss                   integral                         32    'd4700       
+#   scl_high_time_fs               integral                         32    'd600        
+#   scl_low_time_fs                integral                         32    'd1300       
+#   scl_high_time_offset_fs        integral                         32    'd300        
+#   scl_low_time_offset_fs         integral                         32    'd300        
+#   min_su_sta_time_fs             integral                         32    'd600        
+#   min_su_sto_time_fs             integral                         32    'd600        
+#   min_su_dat_time_fs             integral                         32    'd100        
+#   min_hd_sta_time_fs             integral                         32    'd600        
+#   min_hd_dat_time_fs             integral                         32    'd300        
+#   max_hd_dat_time_fs             integral                         32    'd900        
+#   tbuf_time_fs                   integral                         32    'd1300       
+#   scl_high_time_hs               integral                         32    'd100        
+#   scl_low_time_hs                integral                         32    'd200        
+#   scl_high_time_offset_hs        integral                         32    'd40         
+#   scl_low_time_offset_hs         integral                         32    'd40         
+#   min_su_sta_time_hs             integral                         32    'd160        
+#   min_su_sto_time_hs             integral                         32    'd160        
+#   min_su_dat_time_hs             integral                         32    'd10         
+#   min_hd_sta_time_hs             integral                         32    'd160        
+#   min_hd_dat_time_hs             integral                         32    'd40         
+#   max_hd_dat_time_hs             integral                         32    'd70         
+#   tbuf_time_hs                   integral                         32    'd1300       
+#   scl_high_time_fm_plus          integral                         32    'd260        
+#   scl_low_time_fm_plus           integral                         32    'd500        
+#   scl_high_time_offset_fm_plus   integral                         32    'd120        
+#   scl_low_time_offset_fm_plus    integral                         32    'd120        
+#   min_su_sta_time_fm_plus        integral                         32    'd260        
+#   min_su_sto_time_fm_plus        integral                         32    'd260        
+#   min_su_dat_time_fm_plus        integral                         32    'd50         
+#   min_hd_sta_time_fm_plus        integral                         32    'd260        
+#   min_hd_dat_time_fm_plus        integral                         32    'd300        
+#   max_hd_dat_time_fm_plus        integral                         32    'd900        
+#   tbuf_time_fm_plus              integral                         32    'd500        
+#   agent_id                       integral                         32    'b0          
+#   master_code                    integral                         3     'b0          
+#   slave_address                  integral                         10    'b1100110011 
+#   enable_10bit_addr              integral                         1     'b0          
+#   enable_response_to_gen_call    integral                         1     'b1          
+#   slave_type                     integral                         32    'd1          
+#   enable_put_response            integral                         1     'b1          
+#   enable_cci_8bit                integral                         1     'b0          
+#   enable_eeprom_32bit            integral                         1     'b0          
+#   enable_driver_events           integral                         1     'b1          
+#   enable_pullup_resistor         integral                         1     'b1          
+#   start_hs_in_fm_plus            integral                         1     'b0          
+#   enable_bus_clear_sda           integral                         1     'b0          
+#   enable_bus_clear_scl_off       integral                         1     'b0          
+#   clock_count_bus_clear_sda_low  integral                         32    'd15         
+#   clock_count_for_sda_bus_clear  integral                         32    'd3          
+#   bus_clear_sda_timeout          integral                         32    'd20000      
+#   enable_glitch_insert_sda       integral                         1     'b0          
+#   glitch_size_sda                integral                         32    'd1          
+#   enable_glitch_insert_scl       integral                         1     'b0          
+#   glitch_size_scl                integral                         32    'd1          
+#   no_of_slave_address_ranges     integral                         32    'd0          
+#   slave_address_start            da(integral)                     0     -            
+#   slave_address_end              da(integral)                     0     -            
+#   timescale_factor               real                             64    1.000000     
+#   device_id                      integral                         24    'b0          
+#   t_reset_detect_time            integral                         64    'b0          
+#   enable_tlow_1mhz_check         integral                         1     'b0          
+#   enable_tlow_400khz_check       integral                         1     'b0          
+#   enable_tlow_100khz_check       integral                         1     'b0          
+#   inst                           string                           0     ""           
+#   checks_coverage_enable         integral                         1     'b0          
+#   is_active                      integral                         1     'b0          
+#   checks_enable                  integral                         1     'b1          
+#   enable_xml_gen                 integral                         1     'b0          
+#   enable_traffic_log             integral                         1     'b1          
+#   enable_slave_blocking          integral                         1     'b0          
+#   enable_slave_trans_log         integral                         1     'b0          
+# -------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_master_agent.sv(193) @ 0: uvm_test_top.env.i2c_mst [run_phase] kei_vip_i2c_master_agent run phase: finishing...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_master_monitor.sv(194) @ 0: uvm_test_top.env.i2c_mst.monitor [run_phase] kei_vip_i2c_master_monitor::Starting...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(115) @ 0: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] reset_listener ...
+# UVM_INFO ../seq_lib/kei_i2c_reg_hw_reset_virt_seq.sv(17) @ 0: uvm_test_top.env.sqr@@seq [kei_i2c_reg_hw_reset_virt_seq] =====================STARTED=====================
+# [RESET DEBUG] r_comp_type=xxxxxxxx r_comp_version=xxxxxxxx r_comp_param_1=xxxxxxxx r_hs_spklen=xxxxxxxx r_fs_spklen=xxxxxxxx r_ack_general_call=xxxxxxxx r_sda_setup=xxxxxxxx r_sda_hold=xxxxxxxx r_intr_mask=xxxxxxxx r_hs_scl_lcnt=xxxxxxxx r_tx_tl=xxxxxxxx r_rx_tl=xxxxxxxx
+# [READ] Unknown address: 0x000, returning 0
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_master_monitor.sv(203) @ 105000: uvm_test_top.env.i2c_mst.monitor [run_phase] kei_vip_i2c_master_monitor::Finishing...
+# UVM_INFO ../agents/kei_vip_i2c/kei_vip_i2c_slave_monitor.sv(247) @ 105000: uvm_test_top.env.i2c_slv.monitor [run_phase] kei_vip_i2c_slave_monitor::Finishing...
+# [RESET DEBUG] r_comp_type=44570140 r_comp_version=3230322a r_comp_param_1=8e07078e r_hs_spklen=00000001 r_fs_spklen=00000005 r_ack_general_call=00000001 r_sda_setup=00000064 r_sda_hold=01000001 r_intr_mask=00000000 r_hs_scl_lcnt=00000010 r_tx_tl=00000000 r_rx_tl=00000000
+# UVM_INFO ../seq_lib/kei_i2c_reg_hw_reset_virt_seq.sv(23) @ 142000: uvm_test_top.env.sqr@@seq [BLTINSEQ] register reset sequence started
+# UVM_INFO @ 142000: uvm_test_top.env.apb_mst.sequencer@@custom_seq [STARTING_REG_HW_RESET] Starting custom register reset check
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 142000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 142000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 142000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_comp_type = 0x44570140
+# [APB DEBUG] PADDR=0x0fc
+# [READ] r_comp_type = 0x44570140
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 150011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 154000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 154000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_COMP_TYPE: value='h44570140
+# UVM_INFO @ 154000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_COMP_TYPE=44570140
+# UVM_ERROR verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2889) @ 154000: reporter [RegModel] Register "rgm.IC_COMP_TYPE" value read from DUT (0x0000000044570140) does not match mirrored value (0x0000000000000000)
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2902) @ 154000: reporter [RegModel] Field IC_COMP_TYPE (rgm.IC_COMP_TYPE[31:0]) mismatch read=32'h44570140 mirrored=32'h0 
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 154000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 154000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 154000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_comp_type = 0x44570140
+# [READ] r_comp_version = 0x3230322a
+# [APB DEBUG] PADDR=0x0f8
+# [READ] r_comp_version = 0x3230322a
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 162011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 166000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 166000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_COMP_VERSION: value='h3230322a
+# UVM_INFO @ 166000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_COMP_VERSION=3230322a
+# UVM_ERROR verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2889) @ 166000: reporter [RegModel] Register "rgm.IC_COMP_VERSION" value read from DUT (0x000000003230322a) does not match mirrored value (0x0000000000000000)
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2902) @ 166000: reporter [RegModel] Field IC_COMP_VERSION (rgm.IC_COMP_VERSION[31:0]) mismatch read=32'h3230322a mirrored=32'h0 
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 166000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 166000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 166000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_comp_version = 0x3230322a
+# [READ] r_comp_param_1 = 0x8e07078e
+# [APB DEBUG] PADDR=0x0f4
+# [READ] r_comp_param_1 = 0x8e07078e
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 174011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 178000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 178000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_COMP_PARAM_1: value='h8e07078e
+# UVM_INFO @ 178000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_COMP_PARAM_1=8e07078e
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 178000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 178000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 178000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_comp_param_1 = 0x8e07078e
+# [READ] Unknown address: 0x0f0, returning 0
+# [APB DEBUG] PADDR=0x0f0
+# [READ] Unknown address: 0x0f0, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 186011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 190000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 190000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.REG_TIMEOUT_RST: value='h0
+# UVM_INFO @ 190000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.REG_TIMEOUT_RST=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 190000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 190000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 190000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x0f0, returning 0
+# [READ] r_hs_spklen = 0x00000001
+# [APB DEBUG] PADDR=0x0a4
+# [READ] r_hs_spklen = 0x00000001
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 198011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 202000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 202000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_HS_SPKLEN: value='h1
+# UVM_INFO @ 202000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_HS_SPKLEN=1
+# UVM_ERROR verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2889) @ 202000: reporter [RegModel] Register "rgm.IC_HS_SPKLEN" value read from DUT (0x0000000000000001) does not match mirrored value (0x0000000000000000)
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2902) @ 202000: reporter [RegModel] Field IC_HS_SPKLEN (rgm.IC_HS_SPKLEN[7:0]) mismatch read=8'h1 mirrored=8'h0 
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 202000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 202000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 202000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_hs_spklen = 0x00000001
+# [READ] r_fs_spklen = 0x00000005
+# [APB DEBUG] PADDR=0x0a0
+# [READ] r_fs_spklen = 0x00000005
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 210011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 214000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 214000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_FS_SPKLEN: value='h5
+# UVM_INFO @ 214000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_FS_SPKLEN=5
+# UVM_ERROR verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2889) @ 214000: reporter [RegModel] Register "rgm.IC_FS_SPKLEN" value read from DUT (0x0000000000000005) does not match mirrored value (0x0000000000000000)
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2902) @ 214000: reporter [RegModel] Field IC_FS_SPKLEN (rgm.IC_FS_SPKLEN[7:0]) mismatch read=8'h5 mirrored=8'h0 
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 214000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 214000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 214000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_fs_spklen = 0x00000005
+# [READ] Unknown address: 0x09c, returning 0
+# [APB DEBUG] PADDR=0x09c
+# [READ] Unknown address: 0x09c, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 222011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 226000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 226000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_ENABLE_STATUS: value='h0
+# UVM_INFO @ 226000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_ENABLE_STATUS=0
+# UVM_INFO ../seq_lib/kei_i2c_custom_reg_hw_reset_seq.sv(26) @ 226000: uvm_test_top.env.apb_mst.sequencer@@custom_seq [REG_HW_RESET_SKIP] Skipping check for IC_ACK_GENERAL_CALL register
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 226000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 226000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 226000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x09c, returning 0
+# [READ] r_sda_setup = 0x00000064
+# [APB DEBUG] PADDR=0x094
+# [READ] r_sda_setup = 0x00000064
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 234011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 238000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 238000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_SDA_SETUP: value='h64
+# UVM_INFO @ 238000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_SDA_SETUP=64
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 238000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 238000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 238000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_sda_setup = 0x00000064
+# [READ] Unknown address: 0x080, returning 0
+# [APB DEBUG] PADDR=0x080
+# [READ] Unknown address: 0x080, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 246011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 250000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 250000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_TX_ABRT_SOURCE: value='h0
+# UVM_INFO @ 250000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_TX_ABRT_SOURCE=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 250000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 250000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 250000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x080, returning 0
+# [READ] r_sda_hold = 0x01000001
+# [APB DEBUG] PADDR=0x07c
+# [READ] r_sda_hold = 0x01000001
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 258011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 262000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 262000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_SDA_HOLD: value='h1000001
+# UVM_INFO @ 262000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_SDA_HOLD=1000001
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 262000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 262000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 262000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_sda_hold = 0x01000001
+# [READ] Unknown address: 0x078, returning 0
+# [APB DEBUG] PADDR=0x078
+# [READ] Unknown address: 0x078, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 270011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 274000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 274000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_RXFLR: value='h0
+# UVM_INFO @ 274000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_RXFLR=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 274000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 274000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 274000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x078, returning 0
+# [READ] Unknown address: 0x074, returning 0
+# [APB DEBUG] PADDR=0x074
+# [READ] Unknown address: 0x074, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 282011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 286000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 286000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_TXFLR: value='h0
+# UVM_INFO @ 286000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_TXFLR=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 286000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 286000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 286000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x074, returning 0
+# [READ] Unknown address: 0x070, returning 0
+# [APB DEBUG] PADDR=0x070
+# [READ] Unknown address: 0x070, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 294011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 298000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 298000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_STATUS: value='h0
+# UVM_INFO @ 298000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_STATUS=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 298000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 298000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 298000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x070, returning 0
+# [READ] r_enable = 0x00000000
+# [APB DEBUG] PADDR=0x06c
+# [READ] r_enable = 0x00000000
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 306011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 310000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 310000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_ENABLE: value='h0
+# UVM_INFO @ 310000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_ENABLE=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 310000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 310000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 310000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_enable = 0x00000000
+# [READ] IC_CLR_GEN_CALL = 0x0
+# [APB DEBUG] PADDR=0x068
+# [READ] IC_CLR_GEN_CALL = 0x0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 318011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 322000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 322000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_CLR_GEN_CALL: value='h0
+# UVM_INFO @ 322000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_CLR_GEN_CALL=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 322000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 322000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 322000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] IC_CLR_GEN_CALL = 0x0
+# [READ] Unknown address: 0x064, returning 0
+# [APB DEBUG] PADDR=0x064
+# [READ] Unknown address: 0x064, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 330011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 334000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 334000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_CLR_START_DET: value='h0
+# UVM_INFO @ 334000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_CLR_START_DET=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 334000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 334000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 334000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x064, returning 0
+# [READ] Unknown address: 0x060, returning 0
+# [APB DEBUG] PADDR=0x060
+# [READ] Unknown address: 0x060, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 342011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 346000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 346000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_CLR_STOP_DET: value='h0
+# UVM_INFO @ 346000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_CLR_STOP_DET=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 346000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 346000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 346000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x060, returning 0
+# [READ] Unknown address: 0x05c, returning 0
+# [APB DEBUG] PADDR=0x05c
+# [READ] Unknown address: 0x05c, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 354011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 358000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 358000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_CLR_ACTIVITY: value='h0
+# UVM_INFO @ 358000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_CLR_ACTIVITY=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 358000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 358000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 358000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x05c, returning 0
+# [READ] Unknown address: 0x058, returning 0
+# [APB DEBUG] PADDR=0x058
+# [READ] Unknown address: 0x058, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 366011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 370000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 370000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_CLR_RX_DONE: value='h0
+# UVM_INFO @ 370000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_CLR_RX_DONE=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 370000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 370000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 370000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x058, returning 0
+# [READ] Unknown address: 0x054, returning 0
+# [APB DEBUG] PADDR=0x054
+# [READ] Unknown address: 0x054, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 378011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 382000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 382000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_CLR_TX_ABRT: value='h0
+# UVM_INFO @ 382000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_CLR_TX_ABRT=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 382000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 382000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 382000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x054, returning 0
+# [READ] Unknown address: 0x050, returning 0
+# [APB DEBUG] PADDR=0x050
+# [READ] Unknown address: 0x050, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 390011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 394000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 394000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_CLR_RD_REQ: value='h0
+# UVM_INFO @ 394000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_CLR_RD_REQ=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 394000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 394000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 394000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x050, returning 0
+# [READ] Unknown address: 0x04c, returning 0
+# [APB DEBUG] PADDR=0x04c
+# [READ] Unknown address: 0x04c, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 402011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 406000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 406000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_CLR_TX_OVER: value='h0
+# UVM_INFO @ 406000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_CLR_TX_OVER=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 406000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 406000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 406000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x04c, returning 0
+# [READ] Unknown address: 0x048, returning 0
+# [APB DEBUG] PADDR=0x048
+# [READ] Unknown address: 0x048, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 414011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 418000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 418000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_CLR_RX_OVER: value='h0
+# UVM_INFO @ 418000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_CLR_RX_OVER=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 418000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 418000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 418000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x048, returning 0
+# [READ] Unknown address: 0x044, returning 0
+# [APB DEBUG] PADDR=0x044
+# [READ] Unknown address: 0x044, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 426011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 430000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 430000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_CLR_RX_UNDER: value='h0
+# UVM_INFO @ 430000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_CLR_RX_UNDER=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 430000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 430000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 430000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x044, returning 0
+# [READ] IC_CLR_INTR = 0x8ff
+# [APB DEBUG] PADDR=0x040
+# [READ] IC_CLR_INTR = 0x8ff
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 438011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 442000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 442000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_CLR_INTR: value='h8ff
+# UVM_INFO @ 442000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_CLR_INTR=8ff
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 442000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 442000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 442000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] IC_CLR_INTR = 0x8ff
+# [READ] r_tx_tl = 0x00000000
+# [APB DEBUG] PADDR=0x03c
+# [READ] r_tx_tl = 0x00000000
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 450011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 454000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 454000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_TX_TL: value='h0
+# UVM_INFO @ 454000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_TX_TL=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 454000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 454000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 454000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_tx_tl = 0x00000000
+# [READ] r_rx_tl = 0x00000000
+# [APB DEBUG] PADDR=0x038
+# [READ] r_rx_tl = 0x00000000
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 462011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 466000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 466000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_RX_TL: value='h0
+# UVM_INFO @ 466000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_RX_TL=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 466000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 466000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 466000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_rx_tl = 0x00000000
+# [READ] Unknown address: 0x034, returning 0
+# [APB DEBUG] PADDR=0x034
+# [READ] Unknown address: 0x034, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 474011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 478000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 478000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_RAW_INTR_STAT: value='h0
+# UVM_INFO @ 478000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_RAW_INTR_STAT=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 478000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 478000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 478000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x034, returning 0
+# [READ] r_intr_mask = 0x00000000
+# [APB DEBUG] PADDR=0x030
+# [READ] r_intr_mask = 0x00000000
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 486011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 490000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 490000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_INTR_MASK: value='h0
+# UVM_INFO @ 490000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_INTR_MASK=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 490000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 490000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 490000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_intr_mask = 0x00000000
+# [READ] Unknown address: 0x02c, returning 0
+# [APB DEBUG] PADDR=0x02c
+# [READ] Unknown address: 0x02c, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 498011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 502000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 502000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_INTR_STAT: value='h0
+# UVM_INFO @ 502000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_INTR_STAT=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 502000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 502000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 502000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x02c, returning 0
+# [READ] Unknown address: 0x028, returning 0
+# [APB DEBUG] PADDR=0x028
+# [READ] Unknown address: 0x028, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 510011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 514000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 514000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_HS_SCL_LCNT: value='h0
+# UVM_INFO @ 514000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_HS_SCL_LCNT=0
+# UVM_ERROR verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2889) @ 514000: reporter [RegModel] Register "rgm.IC_HS_SCL_LCNT" value read from DUT (0x0000000000000000) does not match mirrored value (0x0000000000000010)
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2902) @ 514000: reporter [RegModel] Field IC_HS_SCL_LCNT (rgm.IC_HS_SCL_LCNT[15:0]) mismatch read=16'h0 mirrored=16'h10 
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 514000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 514000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 514000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x028, returning 0
+# [READ] r_hs_scl_lcnt = 0x00000010
+# [APB DEBUG] PADDR=0x024
+# [READ] r_hs_scl_lcnt = 0x00000010
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 522011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 526000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 526000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_HS_SCL_HCNT: value='h10
+# UVM_INFO @ 526000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_HS_SCL_HCNT=10
+# UVM_ERROR verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2889) @ 526000: reporter [RegModel] Register "rgm.IC_HS_SCL_HCNT" value read from DUT (0x0000000000000010) does not match mirrored value (0x0000000000000001)
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2902) @ 526000: reporter [RegModel] Field IC_HS_SCL_HCNT (rgm.IC_HS_SCL_HCNT[15:0]) mismatch read=16'h10 mirrored=16'h1 
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 526000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 526000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 526000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_hs_scl_lcnt = 0x00000010
+# [READ] r_fs_scl_lcnt = 0x00000082
+# [APB DEBUG] PADDR=0x020
+# [READ] r_fs_scl_lcnt = 0x00000082
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 534011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 538000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 538000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_FS_SCL_LCNT: value='h82
+# UVM_INFO @ 538000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_FS_SCL_LCNT=82
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 538000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 538000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 538000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_fs_scl_lcnt = 0x00000082
+# [READ] r_fs_scl_hcnt = 0x0000003c
+# [APB DEBUG] PADDR=0x01c
+# [READ] r_fs_scl_hcnt = 0x0000003c
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 546011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 550000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 550000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_FS_SCL_HCNT: value='h3c
+# UVM_INFO @ 550000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_FS_SCL_HCNT=3c
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 550000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 550000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 550000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_fs_scl_hcnt = 0x0000003c
+# [READ] r_ss_scl_lcnt = 0x000001d6
+# [APB DEBUG] PADDR=0x018
+# [READ] r_ss_scl_lcnt = 0x000001d6
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 558011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 562000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 562000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_SS_SCL_LCNT: value='h1d6
+# UVM_INFO @ 562000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_SS_SCL_LCNT=1d6
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 562000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 562000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 562000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_ss_scl_lcnt = 0x000001d6
+# [READ] r_ss_scl_hcnt = 0x00000190
+# [APB DEBUG] PADDR=0x014
+# [READ] r_ss_scl_hcnt = 0x00000190
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 570011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 574000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 574000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_SS_SCL_HCNT: value='h190
+# UVM_INFO @ 574000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_SS_SCL_HCNT=190
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 574000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 574000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 574000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_ss_scl_hcnt = 0x00000190
+# [READ] Unknown address: 0x010, returning 0
+# [APB DEBUG] PADDR=0x010
+# [READ] Unknown address: 0x010, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 582011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 586000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 586000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_DATA_CMD: value='h0
+# UVM_INFO @ 586000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_DATA_CMD=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 586000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 586000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 586000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x010, returning 0
+# [READ] r_hs_maddr = 0x00000001
+# [APB DEBUG] PADDR=0x00c
+# [READ] r_hs_maddr = 0x00000001
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 594011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 598000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 598000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_HS_MADDR: value='h1
+# UVM_INFO @ 598000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_HS_MADDR=1
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 598000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 598000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 598000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] r_hs_maddr = 0x00000001
+# [READ] Unknown address: 0x008, returning 0
+# [APB DEBUG] PADDR=0x008
+# [READ] Unknown address: 0x008, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 606011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 610000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 610000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_SAR: value='h0
+# UVM_INFO @ 610000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_SAR=0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 610000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 610000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 610000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x008, returning 0
+# [READ] Unknown address: 0x004, returning 0
+# [APB DEBUG] PADDR=0x004
+# [READ] Unknown address: 0x004, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 618011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 622000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 622000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_TAR: value='h0
+# UVM_INFO @ 622000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_TAR=0
+# UVM_ERROR verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2889) @ 622000: reporter [RegModel] Register "rgm.IC_TAR" value read from DUT (0x0000000000000000) does not match mirrored value (0x0000000000000033)
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2902) @ 622000: reporter [RegModel] Field IC_TAR (rgm.IC_TAR[9:0]) mismatch read=10'h0 mirrored=10'h33 
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(34) @ 622000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer got next item
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(45) @ 622000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] drive_transfer
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(81) @ 622000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_write ...
+# [READ] Unknown address: 0x004, returning 0
+# [READ] Unknown address: 0x000, returning 0
+# [APB DEBUG] PADDR=0x000
+# [READ] Unknown address: 0x000, returning 0
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(107) @ 630011: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] do_idle ...
+# UVM_INFO ../agents/kei_vip_apb3/kei_vip_apb_master_driver.sv(40) @ 634000: uvm_test_top.env.apb_mst.driver [kei_vip_apb_master_driver] sequencer item_done_triggered
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg_predictor.svh(223) @ 634000: uvm_test_top.env.predictor [REG_PREDICT] Observed READ transaction to register rgm.IC_CON: value='h0
+# UVM_INFO @ 634000: reporter [RegModel] Read  register via map rgm.uvm_reg_map: rgm.IC_CON=0
+# UVM_ERROR verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2889) @ 634000: reporter [RegModel] Register "rgm.IC_CON" value read from DUT (0x0000000000000000) does not match mirrored value (0x000000000000007f)
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2902) @ 634000: reporter [RegModel] Field MASTER_MODE (rgm.IC_CON[0:0]) mismatch read=1'h0 mirrored=1'h1 
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2902) @ 634000: reporter [RegModel] Field SPEED (rgm.IC_CON[2:1]) mismatch read=2'h0 mirrored=2'h3 
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2902) @ 634000: reporter [RegModel] Field IC_10BITADDR_SLAVE (rgm.IC_CON[3:3]) mismatch read=1'h0 mirrored=1'h1 
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2902) @ 634000: reporter [RegModel] Field IC_10BITADDR_MASTER (rgm.IC_CON[4:4]) mismatch read=1'h0 mirrored=1'h1 
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2902) @ 634000: reporter [RegModel] Field IC_RESTART_EN (rgm.IC_CON[5:5]) mismatch read=1'h0 mirrored=1'h1 
+# UVM_INFO verilog_src/uvm-1.1d/src/reg/uvm_reg.svh(2902) @ 634000: reporter [RegModel] Field IC_SLAVE_DISABLE (rgm.IC_CON[6:6]) mismatch read=1'h0 mirrored=1'h1 
+# UVM_INFO @ 634000: uvm_test_top.env.apb_mst.sequencer@@custom_seq [FINISHED_REG_HW_RESET] Register reset check completed
+# UVM_INFO ../seq_lib/kei_i2c_reg_hw_reset_virt_seq.sv(28) @ 634000: uvm_test_top.env.sqr@@seq [BLTINSEQ] register reset sequence finished
+# UVM_INFO ../seq_lib/kei_i2c_reg_hw_reset_virt_seq.sv(31) @ 634000: uvm_test_top.env.sqr@@seq [kei_i2c_reg_hw_reset_virt_seq] =====================FINISHED=====================
+# UVM_INFO ../tests/kei_i2c_reg_hw_reset_test.sv(27) @ 634000: uvm_test_top [SEQ] sequence finished
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 634000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../env/kei_i2c_master_scoreboard.sv(191) @ 634000: uvm_test_top.env.sbd_mst [kei_i2c_master_scoreboard] 
+#  ------------------------------------------------ 
+# |   ScoreBoard(Disabled) Report                  |
+#  ------------------------------------------------ 
+# UVM_INFO ../env/kei_i2c_master_scoreboard.sv(199) @ 634000: uvm_test_top.env.sbd_mst [kei_i2c_master_scoreboard] 
+#  DISABLED REASON::
+#  Scoreboard is config-diabled due to [top-down configuration].
+# 
+# --- UVM Report Summary ---
+# 
+# Quit count :     8 of    10
+# ** Report counts by severity
+# UVM_INFO :  348
+# UVM_WARNING :    0
+# UVM_ERROR :    8
+# UVM_FATAL :    0
+# ** Report counts by id
+# [BLTINSEQ]     2
+# [FINISHED_REG_HW_RESET]     1
+# [Questa UVM]     3
+# [REG_HW_RESET_SKIP]     1
+# [REG_PREDICT]    41
+# [RNTST]     1
+# [RegModel]    62
+# [SEQ]     2
+# [STARTING_REG_HW_RESET]     1
+# [TEST_DONE]     1
+# [build_phase]    16
+# [connect_phase]     4
+# [kei_i2c_master_scoreboard]     2
+# [kei_i2c_reg_hw_reset_virt_seq]     2
+# [kei_vip_apb_master_driver]   206
+# [reconfigure_via_task]     2
+# [run_phase]     9
+# ** Note: $finish    : /home/prawns/Desktop/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 634 ns  Iteration: 67  Instance: /kei_i2c_tb
+# End time: 09:17:42 on Sep 11,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 3

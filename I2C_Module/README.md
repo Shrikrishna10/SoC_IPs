@@ -1,0 +1,3 @@
+8 UVM errors were reported, all related to register value mismatches between the DUT (Device Under Test) and the mirrored value in the UVM register model.
+Registers affected: IC_COMP_TYPE, IC_COMP_VERSION, IC_HS_SPKLEN, IC_FS_SPKLEN, IC_HS_SCL_LCNT, IC_HS_SCL_HCNT, IC_TAR, and IC_CON.
+For each error, the value read from the DUT does not match the expected mirrored value, indicating possible issues with register read/write synchronization or incorrect reset/default values.
